@@ -14,6 +14,22 @@ namespace Remote
 
             serverList = new(leftSide);
             ServerManager = new(rightSide);
+
+            //Managers.UsersTable v = new();
+            //Managers.UserInfo user1, user2;
+
+            //user1 = new();
+            //user2 = new();
+
+            //user1.SetName("brahim");
+            //user2.SetName("yassine");
+
+            //user1.SetIcon(@"C:\Users\brahim\Pictures\csharp\sharp\Remote\Remote\imgs\testpfp.png");
+
+            //v.SetUser(Guid.NewGuid(), user1);
+            //v.SetUser(Guid.NewGuid(), user2);
+
+            //v.ToFile(@"C:\Users\brahim\Pictures\csharp\sharp\Remote\Remote\imgs\FUCK.json");
         }
 
         private void RemoteChat_SizeChanged(object sender, EventArgs e)
@@ -30,12 +46,6 @@ namespace Remote
             size = rightSide.Size;
             size.Width = this.ClientSize.Width - leftWidth;
             rightSide.Size = size;
-        }
-
-
-        static async Task test()
-        {
-
         }
 
         private void rightSide_Paint(object sender, PaintEventArgs e)
